@@ -16,7 +16,8 @@
       }
 
       function updateMetaTags(){
-        $('meta[property=og\\:title]').attr('content', "changed title");
+        var a = "check if passing variable works";
+        $('meta[property=og\\:title]').attr('content', a);
         $('meta[property=og\\:url]').attr('content', "http://www.google.com");
         $('meta[property=og\\:description]').attr('content', "changed description");
       }
