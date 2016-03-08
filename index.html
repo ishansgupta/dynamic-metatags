@@ -1,5 +1,8 @@
 <html>
   <head>
+    <meta property="og:title" content="some content"/>
+    <meta property="og:url" content="some content"/>
+    <meta property="og:description" content="some content"/>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
       <script type="text/javascript">
       function setOrCreateMetaTag(metaName, name, value) {
@@ -13,11 +16,9 @@
       }
 
       function updateMetaTags(){
-        setOrCreateMetaTag('name', 'description', 'some random description');
-        setOrCreateMetaTag('property', 'og:title', 'some random title');
-        setOrCreateMetaTag('property', 'og:description', 'some random description');
-        setOrCreateMetaTag('property', 'og:type', 'website');
-        setOrCreateMetaTag('property', 'og:url', 'google.com');
+        $('meta[property=og\\:title]').attr('content', "changed title");
+        $('meta[property=og\\:url]').attr('content', "http://www.google.com");
+        $('meta[property=og\\:description]').attr('content', "changed description");
       }
 
       </script>
