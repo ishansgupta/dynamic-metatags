@@ -14,16 +14,14 @@
         }
         mt.attr('content', value);
       }
-
-      function updateMetaTags(){
-        var a = "check if passing variable works";
-        $('meta[property=og\\:title]').attr('content', "sjkakjs");
-        $('meta[property=og\\:url]').attr('content', "http://www.google.com");
-        $('meta[property=og\\:description]').attr('content', "changed description");
-      }
-
-      </script>
+    </script>
   </head>
-  <body onLoad="updateMetaTags()">
+  <body>
+  <script type="text/javascript">
+         alert("coming hree");
+            $('meta[property=og\\:title]').attr('content', "sjkakjs");
+      $('meta[property=og\\:url]').attr('content', "http://ishansgupta.github.io/dynamic-metatags/");
+      $('meta[property=og\\:description]').attr('content', "changed description");
+  </script>
   </body>
 </html>
