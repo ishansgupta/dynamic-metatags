@@ -1,25 +1,11 @@
 <html>
   <head>
-    <meta property="og:title" content="some content"/>
     <meta property="og:url" content="http://ishansgupta.github.io/dynamic-metatags/"/>
-    <meta property="og:description" content="some content"/>
+    <meta content="See products Uber uses" property="og:title">
+    <meta content="Explore what software and services Uber uses" property="og:description">
+    <meta content="https://res.cloudinary.com/siftery/image/upload/v1438850431/v1/p/companies/uber.png" property="og:image">
+  <meta content="website" property="og:type">
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
-      <script type="text/javascript">
-      function setOrCreateMetaTag(metaName, name, value) {
-        var t = 'meta['+metaName+'='+name+']';
-        var mt = $(t);
-        if (mt.length === 0) {
-            t = '<meta '+metaName+'="'+name+'" />';
-            mt = $(t).appendTo('head');
-        }
-        mt.attr('content', value);
-      }
-
-      $('meta[property=og\\:title]').attr('content', "sjkakjs");
-      $('meta[property=og\\:url]').attr('content', "http://ishansgupta.github.io/dynamic-metatags/");
-      $('meta[property=og\\:description]').attr('content', "changed description");
-      
-    </script>
   </head>
   <body>
   </body>
