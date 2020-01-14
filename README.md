@@ -1,1 +1,1 @@
-# dynamic-metatags
+# An example of github.io website
